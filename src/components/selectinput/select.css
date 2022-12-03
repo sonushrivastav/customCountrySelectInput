@@ -1,0 +1,109 @@
+@import url("https://fonts.googlepis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(197, 178, 214);
+}
+
+.wrapper{
+    width: 370px;
+    margin: 130px auto 0;
+}
+
+.select-btn{
+    height: 65px;
+    padding: 0 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    cursor: pointer;
+}
+.select-btn i {
+    font-size: 31px;
+}
+
+.content{
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+
+/* .wrapper.active .content{
+    display: block;
+} */
+
+.content .search{
+    position: relative;
+
+}
+
+.search i {
+    left: 15px;
+    line-height: 53px;
+    position: absolute;
+    color: #999;
+    font-size: 20px;
+}
+
+.search input{
+    height: 53px;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    outline: none;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+
+}
+
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+}
+.options li{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+.options li:hover , li.selected {
+    /* background-color: #f2f2f2; */
+    background-color: #c6d4e0;
+    cursor: pointer;
+}
+
+
+
+.options::-webkit-scrollbar{
+    width: 7px !important;
+}
+
+.options::-webkit-scrollbar-track{
+    background-color: #f1f1f1 !important;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 25px;
+}
+
+.options li{
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 21px;
+}
