@@ -281,7 +281,6 @@ const Select = () => {
                 type="text"
                 placeholder="Search"
                 onChange={(e) => setSearchCountry(e.target.value)}
-                // onChange={handlechangeSearch}
               />
             </div>
             <ul className="options">
